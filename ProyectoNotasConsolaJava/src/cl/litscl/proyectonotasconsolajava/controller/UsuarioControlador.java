@@ -47,7 +47,7 @@ public class UsuarioControlador {
 		System.out.println("Introduce tu correo: ");
 		String correo = cu.validarString();
 		
-		System.out.println("Introduce tu contrase�a: ");
+		System.out.println("Introduce tu contraseña: ");
 		String clave = cu.validarString();
 		
 		if (daoUsuario.find(correo) != null) {
