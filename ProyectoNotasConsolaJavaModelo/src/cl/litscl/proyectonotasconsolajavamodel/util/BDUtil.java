@@ -3,11 +3,6 @@ package cl.litscl.proyectonotasconsolajavamodel.util;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-/**
- * Esta clase permite realizar una conxión a la base de datos.
- * @author MelchioT
- *
- */
 public class BDUtil {
 	private final String servidor = "localhost"; 
 	private final String baseDeDatos = "dbproyectonotasconsolajava"; 
@@ -19,10 +14,6 @@ public class BDUtil {
 		return conexion;
 	}
 	
-	/**
-	 * Este método permite conectar el programa a la base de datos.
-	 * @return Retorna true si la conexión fue exitosa, de lo contrario retorna false.
-	 */
 	public boolean conectar() {
 		try {
 			String url = "jdbc:mysql://" + servidor + ":3306/" + baseDeDatos; 
@@ -34,9 +25,6 @@ public class BDUtil {
 		}
 	}
 	
-	/**
-	 * Este método desconecta el programa de la base de datos.
-	 */
 	public void desconectar() {
 		try {
 			this.conexion.close();	
