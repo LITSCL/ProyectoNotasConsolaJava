@@ -3,7 +3,7 @@ package cl.litscl.proyectonotasconsolajava.util;
 import java.util.Scanner;
 
 public class ConsolaUtil {
-	static Scanner sc = new Scanner(System.in); //Se crea el objeto de tipo Scanner;
+	static Scanner sc = new Scanner(System.in); //Se crea el objeto de tipo Scanner.
 	
 	public String validarString() { //Método que verifica el ingreso correcto de datos de tipo String.
 		
