@@ -22,21 +22,21 @@ public class Start {
 		System.out.println("¿Que quieres hacer?");
 		
 		switch (cu.validarString()) {
-		case "1":
-			usuarioControlador.registro();
-			break;
-		case "2":
-			Usuario u = usuarioControlador.identificacion();
-			if (u != null) {
-				while(menuSesion(u));
-			}
-			break;
-		case "0":
-			continuar = false;
-			break;
-		default:
-			System.out.println("Opcion incorrecta");
-			break;
+			case "1":
+				usuarioControlador.registro();
+				break;
+			case "2":
+				Usuario u = usuarioControlador.identificacion();
+				if (u != null) {
+					while (menuSesion(u));
+				}
+				break;
+			case "0":
+				continuar = false;
+				break;
+			default:
+				System.out.println("Opcion incorrecta");
+				break;
 		}
 		return continuar;	
 	}
@@ -54,27 +54,26 @@ public class Start {
 		System.out.println("¿Que quieres hacer?");
 		
 		switch (cu.validarString()) {
-		case "1":
-			notaControlador.crear(u);
-			break;
-		case "2":
-			notaControlador.mostrar();
-			break;
-		case "3":
-			notaControlador.eliminar();
-			break;
-		case "0":
-			continuar = false;
-			break;
-		default:
-			System.out.println("Opcion incorrecta");
-			break;
+			case "1":
+				notaControlador.crear(u);
+				break;
+			case "2":
+				notaControlador.mostrar();
+				break;
+			case "3":
+				notaControlador.eliminar();
+				break;
+			case "0":
+				continuar = false;
+				break;
+			default:
+				System.out.println("Opcion incorrecta");
+				break;
 		}
 		return continuar;	
 	}
 
 	public static void main(String[] args) {
-		while(menu());
+		while (menu());
 	}
-
 }
